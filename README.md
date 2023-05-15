@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Word Frequency App
+This is a React frontend application that fetches the contents of a text file, analyzes the word frequency, and displays a histogram of the 20 most occurring words. It utilizes the react-google-charts library to render the histogram chart. Additionally, it provides an option to export the histogram data as a CSV file.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+To get started with the Word Frequency App, follow the instructions below.
 
-## Available Scripts
+# Prerequisites
+Make sure you have the following software installed on your machine:
 
-In the project directory, you can run:
+1.Node.js (version 14 or higher)
 
-### `npm start`
+2.npm (Node Package Manager, usually comes with Node.js)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Creating a New React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.Open the command prompt or terminal.
 
-### `npm test`
+2.Use the create-react-app command to build a new React app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+         npx create-react-app word-frequency-app
+         
+This command will build a new React project within a new directory named word-frequency-app.
 
-### `npm run build`
+3.Go to the project directory by clicking here:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+          cd word-frequency-app
+          
+ #  Installing Dependencies
+ 1.Run the command below to install the Word Frequency App's necessary dependencies:
+ 
+              npm install react-google-charts papaparse
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.This command will install the react-google-charts library for rendering the histogram chart      and the PapaParse library for CSV parsing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Running the App
+1.Start the application:
+    
+    npm start
+    
+ 2.Open your web browser and visit http://localhost:3000 to access the Word Frequency App.
+   
+ # Usage
+1. Click the "Submit" button after entering the URL of the text file you wish to analyse.
+2. The programme will get the text file's contents, examine the word frequency, and show a        histogram graphic of the top 20 words.
+3. Click the "Export" button to save the histogram data as a CSV file. Your local computer will    download the CSV file.
 
-### `npm run eject`
+# Dependencies
+1.React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.react-google-charts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3.PapaParse
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
